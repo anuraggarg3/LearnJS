@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //   myfun();
+function myfun()
+{
+    var a=document.getElementById("firstno").value;
+    var b=document.getElementById("secondno").value;
+    a=parseInt(a);
+    b=parseInt(b);
+    var c=a+b;
+    // let stt="Anurag GArg";
+    // document.write(c).innerHTML;
+    document.getElementById('tes').innerHTML=c;
+    
+    // var str="hello";
+    // document.write(str).innerHTML;
+
+}
+
+</script>
+<body>
+    <!-- <form action="" autocomplete="on"> -->
+        <input type="text" id="firstno" placeholder="First no">
+        <br><br>
+        <input type="text" id="secondno" placeholder="second no">
+        <br><br>
+        <!-- <input type="text">  -->
+       <button onclick="myfun()" >Add</button>
+       <p id="tes">gf</p>
+    <!--    </form>  -->
+  <!-- myfun(); -->
+<script>
+    let para=document.createElement("div");
+    let text=document.createTextNode("lorem dfsfdsdfs");
+    para.appendChild(text);
+    document.body.appendChild(para);
+    console.log(para);
+</script>
+</body>
+</html>
